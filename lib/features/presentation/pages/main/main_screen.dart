@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:mircos/features/presentation/pages/favourites/favourite_page.dart';
-import 'package:mircos/features/presentation/pages/feed/feed_screen.dart';
-import 'package:mircos/features/presentation/pages/feed/bloc/feed_bloc.dart';
-import 'package:mircos/features/presentation/pages/feed/bloc/feed_event.dart';
+import 'package:micros/features/presentation/pages/favourites/favourite_page.dart';
+import 'package:micros/features/presentation/pages/feed/bloc/feed_bloc.dart';
+import 'package:micros/features/presentation/pages/feed/bloc/feed_event.dart';
+import 'package:micros/features/presentation/pages/feed/feed_screen.dart';
+
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});

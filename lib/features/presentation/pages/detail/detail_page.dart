@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mircos/common/common_widgets/custom_appbar.dart';
-import 'package:mircos/common/extensions/text_extentions.dart';
+import 'package:micros/common/extensions/text_extentions.dart';
+import 'package:micros/common/common_widgets/custom_appbar.dart';
+
 
 class DetailScreen extends StatelessWidget {
   final String title;

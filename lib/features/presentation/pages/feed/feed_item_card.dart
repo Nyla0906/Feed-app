@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
-import 'package:mircos/common/gen/assets.gen.dart';
-import 'package:mircos/common/storage/route_paths.dart';
+import 'package:micros/common/gen/assets.gen.dart';
+import 'package:micros/common/storage/route_paths.dart';
 import 'bloc/feed_bloc.dart';
 import 'bloc/feed_event.dart';
 

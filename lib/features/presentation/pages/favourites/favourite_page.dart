@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:mircos/common/common_widgets/custom_appbar.dart';
-import 'package:mircos/common/extensions/text_extentions.dart';
-import 'package:mircos/features/presentation/pages/detail/detail_page.dart';
-import 'package:mircos/features/presentation/pages/feed/bloc/feed_bloc.dart';
-import 'package:mircos/features/presentation/pages/feed/bloc/feed_state.dart';
-import 'package:mircos/features/presentation/pages/feed/bloc/feed_event.dart';
+import 'package:micros/common/extensions/text_extentions.dart';
+import 'package:micros/common/common_widgets/custom_appbar.dart';
+import 'package:micros/features/presentation/pages/detail/detail_page.dart';
+import 'package:micros/features/presentation/pages/feed/bloc/feed_bloc.dart';
+import 'package:micros/features/presentation/pages/feed/bloc/feed_event.dart';
+import 'package:micros/features/presentation/pages/feed/bloc/feed_state.dart';
+
 
 class FavouritePage extends StatelessWidget {
   const FavouritePage({super.key});

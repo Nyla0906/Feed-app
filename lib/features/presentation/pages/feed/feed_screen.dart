@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:mircos/common/extensions/text_extentions.dart';
-import 'package:mircos/common/common_pages/error_page.dart';
-import 'package:mircos/common/common_widgets/custom_appbar.dart';
+import 'package:micros/common/extensions/text_extentions.dart';
+import 'package:micros/common/common_pages/error_page.dart';
+import 'package:micros/common/common_widgets/custom_appbar.dart';
 import 'bloc/feed_bloc.dart';
 import 'bloc/feed_state.dart';
 import 'feed_item_card.dart';
@@ -29,11 +29,10 @@ class FeedScreen extends StatelessWidget {
             return const ErrorPage();
           }
           if (state.feedItems.isEmpty) {
-            return  Center(
-                child: 'Info not found'.s(18).w(20),
+            return const Center(
+                child: Text('Info not found'),
             );
           }
-
           return ListView.builder(
             itemCount: state.feedItems.length,
             itemBuilder: (context, index) {

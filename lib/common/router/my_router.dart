@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:mircos/common/storage/route_paths.dart';
-import 'package:mircos/features/presentation/pages/feed/feed_screen.dart';
-import 'package:mircos/common/common_pages/error_page.dart';
-import 'package:mircos/features/presentation/pages/detail/detail_page.dart';
-import 'package:mircos/features/presentation/pages/main/main_screen.dart';
-import 'package:mircos/features/presentation/pages/favourites/favourite_page.dart';
+import 'package:micros/features/presentation/pages/detail/detail_page.dart';
+import 'package:micros/features/presentation/pages/favourites/favourite_page.dart';
+import 'package:micros/features/presentation/pages/feed/feed_screen.dart';
+import 'package:micros/features/presentation/pages/main/main_screen.dart';
+import 'package:micros/common/common_pages/error_page.dart';
+import 'package:micros/common/storage/route_paths.dart';
+
 
 class Routing {
   static late final GoRouter router;
