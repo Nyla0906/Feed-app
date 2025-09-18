@@ -5,7 +5,6 @@ import 'package:micros/features/presentation/pages/feed/bloc/feed_bloc.dart';
 import 'package:micros/features/presentation/pages/feed/bloc/feed_event.dart';
 import 'package:micros/features/presentation/pages/feed/feed_screen.dart';
 
-
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 

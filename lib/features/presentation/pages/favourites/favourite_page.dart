@@ -15,11 +15,16 @@ class FavouritePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: CustomAppBar(title: "Favourites".s(20).w(800), centreTitle: true),
+      appBar: CustomAppBar
+        (title: "Favourites".s(20).w(800),
+          centreTitle: true,
+      ),
       body: BlocBuilder<FeedBloc, FeedState>(
         builder: (context, state) {
           if (state.favourites.isEmpty) {
-            return Center(child: "Пока нет сохраненных новостей".s(18).w(500));
+            return Center(
+                child: "Пока нет сохраненных новостей".s(18).w(500),
+            );
           }
           return ListView.builder(
             itemCount: state.favourites.length,
@@ -31,7 +36,9 @@ class FavouritePage extends StatelessWidget {
               final description = fav['description']?['__cdata'] ?? '';
 
               return Card(
-                margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                margin: const EdgeInsets.symmetric(
+                    horizontal: 12, vertical: 6,
+                ),
                 child: ListTile(
                   onTap: () {
                     Navigator.push(
@@ -61,7 +68,6 @@ class FavouritePage extends StatelessWidget {
                   ),
                   subtitle: Text(date),
                   trailing: IconButton(
-                    tooltip: 'Remove from favourites',
                     icon: const Icon(Icons.cancel, color: Colors.red),
                     onPressed: () {
                       context.read<FeedBloc>().add(
