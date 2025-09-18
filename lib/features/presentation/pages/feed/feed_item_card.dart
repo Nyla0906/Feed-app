@@ -34,7 +34,7 @@ class FeedItemCard extends StatelessWidget {
       child: ListTile(
         leading: imageUrl != null
             ? Image.network(
-          imageUrl!, width: 80,
+          imageUrl!, width: 80,height: 80,
           fit: BoxFit.cover,
         )
             : const Icon(Icons.image_not_supported),
